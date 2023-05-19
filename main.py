@@ -11,8 +11,13 @@ template = """
 
     Here are some examples different Tones:
     - Formal: We went to Barcelona for the weekend. We have a lot of things to tell you.
-    - Informal: Went to Barcelona for the weekend. Lots to tell you.  
-
+    - Informal: Went to Barcelona for the weekend. Lots to tell you. 
+    - Professional : Thank you for the opportunity to interview on-site at the Marshall & Ilsley office in Milwaukee. I found my observation hour in the Loan Department very interesting and was impressed with the total number of customers and accounts that are being reviewed on a daily basis.
+    - Polite : If you can finish the edit by this afternoon, we can get it to the client by EOD.
+    
+    Here are some phases need be removed in different Tones:
+    - Confident : I think, I’d like to, I’m hoping to
+    
     Here are some examples of words in different dialects:
     - American: French Fries, cotton candy, apartment, garbage, cookie, green thumb, parking lot, pants, windshield
     - British: chips, candyfloss, flag, rubbish, biscuit, green fingers, car park, trousers, windscreen
@@ -59,7 +64,7 @@ col1, col2 = st.columns(2)
 with col1:
     option_tone = st.selectbox(
         'Which tone would you like your email to have?',
-        ('Formal', 'Informal'))
+        ('Formal', 'Informal', 'Professional', 'Polite', 'Confident'))
     
 with col2:
     option_dialect = st.selectbox(
