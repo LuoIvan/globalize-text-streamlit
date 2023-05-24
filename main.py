@@ -14,7 +14,18 @@ template = """
     - Informal: Went to Barcelona for the weekend. Lots to tell you. 
     - Professional : Thank you for the opportunity to interview on-site at the Marshall & Ilsley office in Milwaukee. I found my observation hour in the Loan Department very interesting and was impressed with the total number of customers and accounts that are being reviewed on a daily basis.
     - Polite : If you can finish the edit by this afternoon, we can get it to the client by EOD.
-    
+    - Pessimistic : I got diagnosed with cancer and my dog died. I just don't believe that anything will get better anytime soon.
+    - Optimistic : Despite the civil unrest happening in my city, I believe I can make things better and see real change in my lifetime.
+    - Tense : She frantically searched the room for the killer, who she knew was hidden somewhere in the darkness. Moving blindly through the space, she wondered whether she would find him and stop him before it was too late and he moved on to his next victim.
+    - Curious : He continued to ask questions as we drove to school, wondering about the color of the sky, why the birds were flying in a V-shaped pattern and whether I would be there to pick him up after his nap.
+    - Uplifting : Jason knew that the first day being back at school in his new wheelchair would be difficult, but he remembered his mother's advice to go through the day with a smile on his face. He wheeled himself into school, only to find that his friends and fellow students were happy to give his chair a push and sit with him, offering friendly and encouraging words.
+    - Aggressive : The answer is no, and I don't want to hear another word about it for as long as we both live.
+    - Assertive : As she spoke, her conviction was unshakeable and those listening felt moved to join the committee and make changes in their community.
+    - Informative : The human brain contains millions of cells, all working to handle the various functions performed by the human body.
+    - Entertaining : Knock-knock, who's there? Nobel. Nobel who? No bell, that's why I knocked on the door.
+    - Sarcastic : Rolling her eyes, Emma responded to the bully, ‘Okay, whatever you say goes,' and then forcefully walked away.
+    - Cooperative : After I present my plan for the new project, I would love to hear your thoughts and will open the meeting up to sharing by everyone on the team.
+
     Here are some phases need be removed in different Tones:
     - Confident : I think, I’d like to, I’m hoping to
     
@@ -64,7 +75,7 @@ col1, col2 = st.columns(2)
 with col1:
     option_tone = st.selectbox(
         'Which tone would you like your email to have?',
-        ('Formal', 'Informal', 'Professional', 'Polite', 'Confident'))
+        ('Formal', 'Informal', 'Professional', 'Polite', 'Confident', 'Pessimistic', 'Optimistic', 'Tense', 'Curious', 'Uplifting', 'Aggressive', 'Assertive', 'Informative', 'Entertaining', 'Sarcastic', 'Cooperative'))
     
 with col2:
     option_dialect = st.selectbox(
