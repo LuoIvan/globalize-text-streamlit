@@ -46,15 +46,13 @@ template = """
     
     YOUR {dialect} RESPONSE:
 """
+
 email_content = """
 Hi Mgrs./Leads,
-
 We would propose the media binary size check in our code review (UMD + GPU RT). The detailed req are as below - 
 •	Binary size check will be added as one github action and visualized in every new PR. @ POs/Leads, please help to ensure the corresponding check is included in our code review. Any suspicious commits w/ >50KB binary size increment will require the approval from media binary size owner (@Wang, Xiaotong) to move forward.
 •	Regular check will be added in CI to monitor the trend for binary size change and reviewed every week. In case any unexpected increment (>150KB in total), comp owners will be involved.
-
 Please kindly help to review the aforementioned req and share your comments by WW21.5. If no objections, the new policy will take effect since WW22.1.
-
 Thanks
 Ivan
 """
@@ -95,7 +93,7 @@ with col2:
         ('American', 'British'))
 
 def get_text():
-    input_text = st.text_area(label="Email Input", label_visibility='collapsed', placeholder="Your Email...", key="email_input")
+    input_text = st.text_area(label="Email Input", label_visibility='collapsed', placeholder=email_content, key="email_input")
     return input_text
 
 email_input = get_text()
