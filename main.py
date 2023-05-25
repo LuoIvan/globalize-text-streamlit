@@ -85,7 +85,7 @@ with col2:
         ('American', 'British'))
 
 def get_text():
-    input_text = st.text_area(label="Email Input", label_visibility='collapsed', placeholder=email_content, key="email_input")
+    input_text = st.text_area(label="Email Input", label_visibility='collapsed', placeholder="", key="email_input")
     return input_text
 
 email_input = get_text()
